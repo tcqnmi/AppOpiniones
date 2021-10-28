@@ -24,6 +24,8 @@
             android:label="detalle"/>
         <activity android:name="com.example.opiniones.Edit"
             android:label="edit"/>
+        <activity android:name="com.example.opiniones.ListadoLOpis"
+            android:label="listadoLOpis"/>
 
     </application>
 

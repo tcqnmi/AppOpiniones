@@ -7,6 +7,7 @@ import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -24,6 +25,7 @@ public class Main extends Activity {
 
         TextView tv = (TextView) findViewById(R.id.cabecera);
         ListView lv = (ListView) findViewById(R.id.opciones);
+        Button bt = (Button) findViewById(R.id.btOpiniones);
 
         Libros libros = new Libros();
 
@@ -32,6 +34,17 @@ public class Main extends Activity {
         ArrayAdapter adapterTitulos = new ArrayAdapter(this, android.R.layout.simple_list_item_1, titulos);
 
         lv.setAdapter(adapterTitulos);
+
+        View.OnClickListener listenerListado = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent llamadaListado = new Intent(getApplicationContext(), ListadoLOpis.class);
+                startActivity(llamadaListado);
+            }
+        };
+        bt.setOnClickListener(listenerListado);
+
+
 
         AdapterView.OnItemClickListener listenerLista = new AdapterView.OnItemClickListener() {
             @Override
@@ -46,6 +59,8 @@ public class Main extends Activity {
             }
         };
         lv.setOnItemClickListener(listenerLista);
+
+
 
 
     }

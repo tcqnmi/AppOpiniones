@@ -47,5 +47,11 @@ public class Opiniones {
         listaUsuarios.set(pos, user);
     }
 
+    public ArrayList devolverArrayListOpis(){
+
+        return listaOpiniones;
+    }
+
+
 
 }

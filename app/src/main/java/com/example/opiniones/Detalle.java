@@ -57,8 +57,6 @@ public class Detalle extends Activity {
         };
         btEscribir.setOnClickListener(listenerEscribir);
 
-
-
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent i){
