@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/cabEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Esrcibe tu opinión: "/>
+    <EditText
+        android:id="@+id/editOpinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ... "/>
+    <TextView
+        android:id="@+id/cabUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Esrcibe tu usuario: "/>
+    <EditText
+        android:id="@+id/editUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Usuario"/>
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"/>
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"/>
+
+
+</LinearLayout>
